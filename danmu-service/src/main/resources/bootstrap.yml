@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: danmu-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: danmu-service
+      label: main
+      profile: dev
+      enabled: true
+  config:
+    import: configserver:http://localhost:8888

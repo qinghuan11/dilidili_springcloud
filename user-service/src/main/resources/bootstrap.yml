@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: user-service
+      label: main
+      profile: dev
+      enabled: true
+  config:
+    import: configserver:http://localhost:8888
