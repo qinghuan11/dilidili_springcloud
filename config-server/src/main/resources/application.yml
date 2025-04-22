@@ -1,0 +1,16 @@
+﻿server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/qinghuan11/dilidili_springcloud # 替换为实际的 Git 仓库地址
+          search-paths: config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
