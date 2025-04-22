@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/qinghuan11/dilidili_springcloud
+          uri: https://github.com/qinghuan11/dilidili_springcloud.git
           search-paths: config
 eureka:
   client:
