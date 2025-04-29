@@ -1,7 +1,25 @@
 server:
-  port: 8080
+  port: 8084
+
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dilidili_ad?useSSL=false&serverTimezone=UTC
+    username: root
+    password: yourpassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:
       host: localhost
       port: 6379
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: your-access-key
+  secret-key: your-secret-key
+  bucket: dilidili-ads
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: qinghuan.dao.domain
+  configuration:
+    map-underscore-to-camel-case: true
