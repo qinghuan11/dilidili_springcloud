@@ -10,3 +10,9 @@ spring:
     redis:
       host: localhost
       port: 6379
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 开启下划线转驼峰
+  global-config:
+    db-config:
+      id-type: auto # 主键自增
