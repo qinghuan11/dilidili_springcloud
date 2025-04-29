@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: eureka-server
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration
 eureka:
   client:
     register-with-eureka: false
@@ -12,3 +17,4 @@ eureka:
 logging:
   level:
     root: debug
+    org.springframework.cloud: debug  # 增加 Spring Cloud 调试日志
