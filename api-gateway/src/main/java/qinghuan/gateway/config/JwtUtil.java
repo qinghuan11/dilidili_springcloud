@@ -1,4 +1,4 @@
-package qinghuan.common;
+package qinghuan.gateway.config;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
