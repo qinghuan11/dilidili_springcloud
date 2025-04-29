@@ -10,3 +10,8 @@ spring:
     redis:
       host: localhost
       port: 6379
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: qinghuan.dao.domain
+  configuration:
+    map-underscore-to-camel-case: true
