@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 用户 MyBatis 映射器
  */
-@Mapper
+//@org.apache.ibatis.annotations.Mapper
+
 public interface UserMapper extends BaseMapper<User> {
 }
