@@ -1,0 +1,10 @@
+spring:
+        application:
+                name: api-gateway
+        config:
+                import: configserver:http://localhost:8888
+        profiles:
+                active: dev
+        cloud:
+                config:
+                        label: master  # 确保与 config-server 的 default-label 一致

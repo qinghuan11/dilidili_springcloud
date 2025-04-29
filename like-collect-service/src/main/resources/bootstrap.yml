@@ -1,0 +1,12 @@
+spring:
+        application:
+                name: ad-service
+        cloud:
+                config:
+                        uri: http://localhost:8888
+                        name: ad-service
+                        label: master
+                        profile: dev
+                        enabled: true
+        config:
+                import: optional:configserver:http://localhost:8888
