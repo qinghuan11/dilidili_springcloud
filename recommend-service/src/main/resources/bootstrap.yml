@@ -1,10 +1,10 @@
 spring:
         application:
-                name: ad-service
+                name: recommend-service
         cloud:
                 config:
                         uri: http://localhost:8888
-                        name: ad-service
+                        name: recommend-service
                         label: master
                         profile: dev
                         enabled: true
