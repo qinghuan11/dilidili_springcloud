@@ -3,6 +3,10 @@
     name: user-service
   profiles:
     active: dev
+  sql:
+    init:
+      mode: never
+
 eureka:
   client:
     service-url:
@@ -12,3 +16,4 @@ eureka:
 logging:
   level:
     root: debug
+    qinghuan.user: debug
